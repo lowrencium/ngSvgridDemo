@@ -1,0 +1,3 @@
+[submodule "projects/ng-svgrid"]
+	path = projects/ng-svgrid
+	url = https://github.com/lowrencium/ngSvgrid.git
