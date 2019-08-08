@@ -1,0 +1,21 @@
+<svg:g (dragged)="onItemDrag($event)" *ngIf="umlClass" [x]="umlClass.position.x" [y]="umlClass.position.y" ngs-grid-item
+       ngsDraggable>
+  <g style="stroke:#000000">
+    <rect height="200" style="fill:#7db944;fill-opacity:1;stroke:#000000;stroke-width:4.53090858" width="320" x="260"
+          y="40"/>
+    <line style="stroke:#000000;stroke-width:2" x1="260" x2="580" y1="100" y2="100"/>
+    <text class="name abstract"
+          style="font-size:25px;font-style:italic;font-weight:bold;text-anchor:middle;fill:#000000;stroke:#000000;stroke-width:0;font-family:sans-serif"
+          x="420" y="85">{{ umlClass.title }}</text>
+    <text font-size="20" x="290" y="105">
+      <tspan
+        (click)="onAttributeDblclick(attribute)"
+        *ngFor="let attribute of umlClass.attributes"
+        [ngStyle]="{'font-weight': attribute === selectedAttribute ? '600' : '400'}"
+        dy="1.3em"
+        x="290">
+        {{ attribute }}
+      </tspan>
+    </text>
+  </g>
+</svg:g>

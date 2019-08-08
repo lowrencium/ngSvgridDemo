@@ -1,0 +1,26 @@
+ngs-grid {
+  width: 100%;
+  height: 100%;
+}
+
+#scaleBox {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  display: flex;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  background-color: #fff;
+  height: 50px;
+  z-index: 2;
+
+  > * {
+    flex: 1;
+  }
+}
+
+:host {
+  position: relative;
+}
