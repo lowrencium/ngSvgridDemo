@@ -30,4 +30,16 @@ export class AppComponent {
       methods: [],
     }));
   }
+
+  addClass() {
+    this.classes.push(Object.assign(new UmlClassEntity(), {
+      position: {
+        x: Math.random() * window.innerWidth,
+        y: Math.random() * window.innerHeight
+      },
+      title: 'Author',
+      attributes: ['id', 'firstname', 'lastname'],
+      methods: [],
+    }));
+  }
 }

@@ -2,7 +2,8 @@
   <h5>Scale</h5>
   <button (click)="scale = scale + 10">+</button>
   <button (click)="scale = scale - 10">-</button>
+  <button (click)="addClass()">Add item</button>
 </div>
 <ngs-svgrid [scale]="scale">
-  <svg:g *ngFor="let classe of classes" [umlClass]="classe" ngs-demo-uml-item></svg:g>
+  <svg:g *ngFor="let class of classes" [umlClass]="class" ngs-demo-uml-item></svg:g>
 </ngs-svgrid>

@@ -1,5 +1,5 @@
-<svg:g (dragged)="onItemDrag($event)" *ngIf="umlClass" [x]="umlClass.position.x" [y]="umlClass.position.y" ngs-grid-item
-       ngsDraggable>
+<svg:g (dragged)="onItemDrag($event)" *ngIf="umlClass" [x]="umlClass.position.x" [y]="umlClass.position.y" ngsDraggable
+       ngsGridItem>
   <g style="stroke:#000000">
     <rect height="200" style="fill:#7db944;fill-opacity:1;stroke:#000000;stroke-width:4.53090858" width="320" x="260"
           y="40"/>
